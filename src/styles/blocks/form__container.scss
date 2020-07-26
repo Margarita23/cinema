@@ -1,0 +1,58 @@
+.form__container {
+    background-color: $main;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.form__row {
+    display: flex;
+    justify-items: space-between;
+    margin-bottom: 18px;
+    
+    &:last-child {
+        margin-bottom: 0px;
+        
+    }
+}
+
+.form_input {
+    width: 50%;
+    font-size: 13px;
+    margin-right: 14px;
+    padding: 7px 10px 7px 15px;
+    border: none;
+    background-color: $white-dark;
+}
+
+.form__row .form_input:last-child {
+    margin-right: 0px;
+}
+
+.form_input.form__error {
+    background-color: #f2dede;
+    width: 61%;
+    margin-right: 14px;
+    color: #ca7380;
+}
+
+.form_input.form__active {
+    background-color: #dddddd;
+    flex: 1;
+}
+
+.form_input.form__message {
+    width: 100%;
+    padding: 17px 110px 6px 16px;
+}
+
+.form__login {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: $turquoise;
+    color: $main;
+    padding: 8px 35px;
+}
+
+// eeeeee

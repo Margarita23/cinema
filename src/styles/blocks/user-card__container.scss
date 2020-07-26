@@ -1,0 +1,78 @@
+.user-card__container {
+    height: 300px;
+    margin-bottom: 27px;
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 37px 23px 37px;
+}
+
+.user-card__avatar-container {
+    padding: 5px;
+    border: 1px solid $turquoise;
+    border-radius: 50%;
+    margin-bottom: 27px;
+}
+
+.user-card__avatar {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.avatar__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.user-card__name {
+    letter-spacing: 0px;
+    font-size: 13px;
+    color: $grey;
+    font-family: $helvetica-light;
+}
+
+.user-card__login {
+    font-size: 9px;
+    color: $turquoise;
+    padding-bottom: 12px;
+}
+
+.user-card__follow {
+    width: 100%;
+    background-color: $turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0px;
+}
+
+a.follow__link {
+    font-size: 12px;
+    text-decoration: none;
+    color: $main;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.follow__link:after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-10%);
+    background-image: url('../../images/icons/add-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}

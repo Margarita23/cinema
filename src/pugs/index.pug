@@ -1,0 +1,186 @@
+extends ./layout.pug
+
+block var
+    - var title = "ColaeesClinic"
+
+block content
+    .wrapper
+        .container
+            .container__block.container__block--first
+                .slideshow__container
+                    .slick-carousel
+                        .link__container
+                            img.link__image(src="../images/bitmap.png")
+                        .link__container
+                            img.link__image(src="../images/bitmap.png")
+                        .link__container
+                            img.link__image(src="../images/bitmap.png")
+                ul.contacts__container
+                    li.contacts__item
+                        img.contacts__img(src="../images/social/twitter.png")
+                    li.contacts__item
+                        img.contacts__img(src="../images/social/soc.png")
+                    li.contacts__item
+                        img.contacts__img(src="../images/social/google.png")
+                    li.contacts__item
+                        img.contacts__img(src="../images/social/facebook.png")
+                .articles__container
+                    .articles__img-container
+                        img.articles__img(src="../images/articles/article.png")
+                    .articles__title Tony Stark is Iron M
+                    .articles__date Posted on 30th August 2013
+                    ul.stat__list
+                        li.stat__item.stat__review
+                            p 256
+                        li.stat__item.stat__message
+                            p 12
+                        li.stat__item.stat__like
+                            p 83
+            .container__block.container__block--second
+                .nav-bar__container
+                    ul.nav-bar__list
+                        li.nav-bar__item.nav-bar__item--home
+                            a(href="#")
+                                img.img__home-icon(src="../images/icons/home-icon.svg")
+                        li.nav-bar__item.nav-bar__item--about
+                            a(href="#") About
+                        li.nav-bar__item.nav-bar__item--services
+                            a(href="#") Services
+                        li.nav-bar__item.nav-bar__item--portfolio
+                            a(href="#") Portfolio
+                        li.nav-bar__item.nav-bar__item--blog
+                            a(href="#") Blog
+                        li.nav-bar__item.nav-bar__item--contact
+                            a(href="#") Contact
+                        li.nav-bar__item.nav-bar__item--search
+                            .search__form
+                                input.search__input(type="text" placeholder="Search")
+                                button.search__btn
+                .first
+                    .user-card__container
+                        .user-card__avatar-container
+                            .user-card__avatar
+                                img.avatar__img(src="../images/content/avatar.png")
+                        .user-card__name Scarlett Johansson
+                        .user-card__login Black Widow
+                        .user-card__follow
+                            a.follow__link Follow
+                    .dropdown__container
+                        .dropdown
+                            button.btn.btn-secondary.dropdown-toggle(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown Normal
+                            .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                                a.dropdown-item(href="#") Option One
+                                a.dropdown-item(href="#") Option Two
+                        .dropdown.active
+                            button.btn.btn-secondary.dropdown-toggle(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown button
+                            .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                                a.dropdown-item(href="#") Option One
+                                a.dropdown-item(href="#") Option Two
+                .second
+                    .weather__container
+                        .weather__header
+                            .weather__city Exeter, UK
+                            .weather__measure
+                                .measure__f F
+                                .measure__c C
+                        .weather__body
+                            .weather__icon
+                                img.weather__img(src="../images/icons/cloud-sun.png")
+                            .weather__temp 21
+                        .weather__footer
+                            ul.days__list
+                                li.days__item
+                                    .days__icon
+                                        img.icon__img(src="../images/icons/sun.png")
+                                    .days__name Monday
+                                li.days__item
+                                    .days__icon
+                                        img.icon__img(src="../images/icons/cloud.png")
+                                    .days__name Tuesday
+                                li.days__item
+                                    .days__icon
+                                        img.icon__img(src="../images/icons/sun-rain.png")
+                                    .days__name Wednesday
+                                li.days__item
+                                    .days__icon
+                                        img.icon__img(src="../images/icons/cloud.png")
+                                    .days__name Tuesday
+                    .messages__container
+                        .alert.alert-success(role="alert")
+                            p Congratulations! You have been successful
+                        .alert.alert-info(role="alert")
+                            p Attention! I recommend you look at me
+                        .alert.alert-warning(role="alert")
+                            p Warning! Are you sure you want to do this?
+                        .alert.alert-danger(role="alert")
+                            p Oops! Somethings gone wrong
+                .third
+                    .calendar__container
+                        div#datepicker(class="datepicker ll-skin-nigran")
+                .forth
+                    .categories__container
+                        div(id="accordion")
+                            h3 Web Design
+                            ul.section__list
+                                li.section__item 
+                                    .item__title Ecommerce
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Blogs
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Portfolio
+                                    .item__count 3
+                            h3 Print Design
+                            ul.section__list
+                                li.section__item 
+                                    .item__title Ecommerce
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Blogs
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Portfolio
+                                    .item__count 3
+                            h3 Photography
+                            ul.section__list(style="height: 108px;")
+                                li.section__item 
+                                    .item__title Ecommerce
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Blogs
+                                    .item__count 3
+                                li.section__item 
+                                    .item__title Portfolio
+                                    .item__count 3
+
+                    ul.buttons__list
+                        li.buttons__item
+                            .switch__text Switch ON
+                            label.switch
+                                input(type="checkbox" checked)
+                                span.slider.round
+                        li.buttons__item
+                            .switch__text Switch OFF
+                            label.switch
+                                input(type="checkbox")
+                                span.slider.round
+                        li.buttons__item.ranges
+                            .two-slider__container
+                                div#slider-two-range
+                            .one-slider__container
+                                div#slider-range
+                .fifth
+                    form.form__container
+                        .form__row
+                            input(type="text" placeholder="Username").form_input.form__username
+                            input(type="password" placeholder="Password").form_input.form__password
+                        .form__row
+                            .form_input.form__error
+                                p Please use correct email format
+                            .form_input.form__active
+                                p Active
+                        .form__row
+                            textarea(placeholder="Message").form_input.form__message
+                        button.form__login Login
+

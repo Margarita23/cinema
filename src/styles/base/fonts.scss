@@ -1,0 +1,36 @@
+$hel__path: '../../fonts/HelveticaNeueCyr-';
+
+@font-face {
+    font-family: 'hel-black';
+    src: url('#{$hel__path}Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-bold';
+    src: url('#{$hel__path}Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-italic';
+    src: url('#{$hel__path}Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-light';
+    src: url('#{$hel__path}Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-roman';
+    src: url('#{$hel__path}Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-thin';
+    src: url('#{$hel__path}Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hel-ultraLight';
+    src: url('#{$hel__path}UltraLight.ttf') format('truetype');
+}

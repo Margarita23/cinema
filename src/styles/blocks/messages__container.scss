@@ -1,0 +1,73 @@
+.messages__container {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 18px 0px 19px;
+    background-color: $main;
+    // height: 262px;
+}
+
+    
+
+.messages__container > .alert {
+    margin-bottom: 19px;
+    font-size: 13px;
+    padding: 13px 17px 10px 11px;
+    border-radius: 0;
+    border: none;
+    position: relative;
+}
+
+.messages__container > .alert:after {
+    content: 'X';
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 50%;
+    margin-right: 17px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.messages__container > .alert-success {
+    border-left: 4px solid $lime-light;
+    background-color: #dff0d8;
+    color: #6ba33f;
+
+    &:after {
+        border: 1px solid #6ba33f;
+    }
+}
+
+.messages__container > .alert-info {
+    border-left: 4px solid #bce8f1;
+    background-color: #d9edf7;
+    color: #28a5bf;
+
+    &:after {
+        border: 1px solid #28a5bf;
+    }
+}
+
+.messages__container > .alert-warning {
+    border-left: 4px solid #fbeed5;
+    background-color: #fcf8e3;
+    color: #eeb448;
+
+    &:after {
+        border: 1px solid #eeb448;
+    }
+}
+
+.messages__container > .alert-danger {
+    border-left: 4px solid #eed3d7;
+    background-color: #f2dede;
+    color: #c56775;
+
+    &:after {
+        border: 1px solid #c56775;
+    }
+}

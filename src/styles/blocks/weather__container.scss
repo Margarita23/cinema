@@ -1,0 +1,124 @@
+.weather__container {
+    height: 238px;
+    margin-bottom: 28px;
+    background-color: $turquoise;
+    color: rgba($main, 0.85);
+}
+
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 16px 0px 14px;
+}
+
+.weather__measure {
+    display: flex;
+}
+
+.weather__body {
+    display: flex;
+    height: 141px;
+    padding: 23px 58px 0px 58px;
+}
+
+.weather__footer {
+    align-self: flex-end;
+    border-top: 1px solid #035a75;
+}
+
+.weather__temp {
+    font-size: 70px;
+    color: $main;
+    position: relative;
+    height: 100px;
+}
+
+.weather__temp:after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $main;
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    right: -5px;
+    line-height: 100px;
+}
+
+.weather__icon {
+    width: 83px;
+    height: 75px;
+    position: relative;
+    margin-right: 44px;
+}
+
+.weather__img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.days__list {
+    display: flex;
+}
+
+.days__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 9px 0px 0px 0px;
+    border-right: 1px solid #035a75;
+}
+
+.days__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.icon__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: unset;
+}
+
+.days__item:last-child {
+    border-right: none;
+}
+
+.measure__f {
+    position: relative;
+    color: $grey;
+    margin-right: 14px;
+}
+
+.measure__f:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid $grey;
+    border-radius: 50%;
+    top: 3px;
+    left: -6px;
+}
+
+.measure__c {
+    position: relative;
+}
+
+.measure__c:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid $main;
+    border-radius: 50%;
+    top: 3px;
+    left: -6px;
+}

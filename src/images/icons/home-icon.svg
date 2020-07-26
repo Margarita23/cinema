@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 30" width="38" height="30">
+	<defs>
+		<image width="38" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAMAAAB3ypxcAAAAAXNSR0IB2cksfwAAADNQTFRF////REREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREbFWr9AAAABF0Uk5TADDQ/1DwgGCwwJBwQBAg4KBItXk6AAAA7ElEQVR4nN2UQQKDIAwEQyKVKCD/f22XYG1VtD13TkRGXSBKdMCxCDsMBi+Vx1EwRkgQR6IgrKrie9YkMhPNIhOpRFwQOUspiB+ovTDwlZZZFrcmXBCrr0UvnLYH84WG8GUX0+45asXCn9hrSdfwtxr2lF3P2mkIr6lrUVuIcQz/yWQnUinbqMfcnlHDx2vrlcjCx+4qTYq2PmTMCNDtg4pHE2QsVyUgXKcPGpgKQZQSDnm50+o8dsuFku60VILbitflHI1Mp5ldofYBIMw37QF+0Kz+W43tR1DxTfNrWZvjjWu/lYr1ykfZDuoJCScHhbYvUAkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Nav Bar">
+		<use id="Home Icon" href="#img1" x="0" y="0" />
+	</g>
+</svg>
